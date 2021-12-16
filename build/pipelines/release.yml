@@ -231,6 +231,7 @@ jobs:
       displayName: 'Generate SBOM manifest'
       inputs:
        BuildDropPath: '$(System.ArtifactsDirectory)/appx'
+       Verbosity: Verbose
     - task: PublishBuildArtifacts@1
       displayName: Publish Artifact (appx)
       inputs:
